@@ -1,0 +1,114 @@
+.about-us-section {
+        font-family: 'Tajawal', sans-serif;
+        padding: 100px 0; /* زيادة المسافة العلوية لفصلها عن الـ Slider */
+        background-color: #ffffff;
+    }
+
+    .container-about {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .about-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .about-content { flex: 1.2; min-width: 300px; }
+    .about-visual { flex: 1; min-width: 300px; }
+
+    .section-subtitle {
+        color: #006143;
+        font-weight: 700;
+        margin-bottom: 15px;
+        display: block;
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        color: #5b5e5f;
+        margin-bottom: 25px;
+        line-height: 1.4;
+    }
+
+    .about-description {
+        color: #666;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin-bottom: 45px;
+    }
+
+    .pillars-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .pillar-item {
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .pillar-item .icon {
+        font-size: 1.8rem;
+        background: #f0fdf4;
+        padding: 12px;
+        border-radius: 12px;
+        line-height: 1;
+    }
+
+    .pillar-info h5 {
+        margin: 0 0 8px 0;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #006143;
+    }
+
+    .pillar-info p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #636e72;
+        line-height: 1.5;
+    }
+
+    .image-stack { position: relative; padding-left: 20px; }
+
+    .main-img {
+        width: 100%;
+        border-radius: 30px;
+        box-shadow: -20px 20px 0px #f0fdf4; /* الظل لليسار لأن الاتجاه RTL */
+        transition: transform 0.4s ease;
+    }
+
+    .main-img:hover {
+        transform: scale(1.02);
+    }
+
+    .experience-badge {
+        position: absolute;
+        bottom: -25px;
+        left: -10px;
+        background: #006143;
+        color: white;
+        padding: 25px 30px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 15px 30px rgba(40, 167, 69, 0.25);
+    }
+
+    .experience-badge span { font-size: 2.2rem; font-weight: 800; display: block; line-height: 1; }
+    .experience-badge p { margin: 5px 0 0; font-size: 0.9rem; white-space: nowrap; }
+
+    /* التجاوب */
+    @media (max-width: 991px) {
+        .about-wrapper { flex-direction: column; text-align: center; }
+        .pillar-item { flex-direction: column; align-items: center; text-align: center; }
+        .experience-badge { left: 50%; transform: translateX(-50%); bottom: -40px; }
+        .image-stack { padding-left: 0; margin-top: 40px; }
+        .main-img { box-shadow: 0 15px 0px #f0fdf4; }
+    }
