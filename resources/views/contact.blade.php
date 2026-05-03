@@ -88,7 +88,7 @@
         </div>
         <div class="map-frame">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108785.08576820648!2d35.82213!3d31.95522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2sAmman%2C%20Jordan!5e0!3m2!1sar!2sjo!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.0!2d35.6183186!3d32.2255471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c93346be809bf:0xb3b6c08d4816aa9a!2sAlayyan+Greenhouses!5e0!3m2!1sar!2sjo!4v1700000000000"
                 width="100%" height="420"
                 style="border:0;" allowfullscreen
                 loading="lazy"
@@ -102,8 +102,8 @@
                 عمّان، المملكة الأردنية الهاشمية
             </div>
             <a class="map-btn"
-               href="https://maps.google.com/?q=Amman,Jordan"
-               target="_blank">
+            href="https://www.google.com/maps/place/Alayyan+Greenhouses/@32.2255471,35.6208935,17z"
+            target="_blank">
                 <i class="fa fa-map-marker-alt"></i>
                 فتح في خرائط جوجل
             </a>
