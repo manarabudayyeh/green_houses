@@ -29,11 +29,11 @@
                     <div id="head-mobile"></div>
                     <div class="button"></div>
                     <ul>
-                        <li class='active'><a href='{{ url('/') }}'>الرئيسية</a></li>
-                        <li><a href='{{ route("about") }}'>من نحن</a></li>
-                        <li><a href='{{ route("services") }}'>خدماتنا</a></li>
-                        <li><a href='{{ route("products") }}'>منتجاتنا</a></li>
-                        <li><a href='{{ route("contact") }}'>تواصل معنا</a></li>
+                        <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ url('/') }}">الرئيسية</a></li>
+                        <li class="{{ request()->is('about') ? 'active' : '' }}"><a href="{{ route("about") }}">من نحن</a></li>
+                        <li class="{{ request()->is('services') ? 'active' : '' }}"><a href="{{ route("services") }}">خدماتنا</a></li>
+                        <li class="{{ request()->is('products') ? 'active' : '' }}"><a href="{{ route("products") }}">منتجاتنا</a></li>
+                        <li class="{{ request()->is('contact') ? 'active' : '' }}"><a href="{{ route("contact") }}">تواصل معنا</a></li>
                     </ul>
                 </nav>
             </div>

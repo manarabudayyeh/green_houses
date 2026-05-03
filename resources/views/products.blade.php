@@ -1,10 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'منتجاتنا')
+@section('title', 'منتجاتنا - عليان للبيوت الزراعية')
 
 @section('styles')
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/products.css') }}">
 @endsection
 
@@ -82,6 +80,36 @@
         'sub'=>['تعيش لعمر أطول أكثر من ضعف عمر الخلايا الكرتونية.',
         'سهولة تنظيفها.',
         'لا تتآكل وبالتالي صيانة أقل.']],
+
+        ['id'=>7,'num'=>7,'cat'=>'systems','tag_ar'=>' أحواض التبريد','title_ar'=>'أحواض التبريد','title_en'=>'Cooling Tanks','img_tag'=>'COOLING TANKS ','images' => ['cooling_tank_one.webp','cooling_tank_two.webp'],
+        'points'=>['الإطارات التقليدية: المصنوعة من الحديد المجلفن سماكة 0.5 ملم.',
+        'الإطارات الإيطالية (ماركة PERICOLI): إطارات الحديد المجلفن المدهون حرارياً (مناسب لطلاء السيارات).',
+        ],'sub'=>[]],
+
+        ['id'=>8,'num'=>8,'cat'=>'cover','tag_ar'=>'الاكسسوارات','title_ar'=>'الاكسسوارات','title_en'=>'Accessories','img_tag'=>'ACCESSORIES ','images' => ['accessories_one.webp','accessories_two.webp'],
+        'points'=>['بروفيلات تركيب البلاستيك (حديد مجلفن).',
+        'بروفيلات تركيب البلاستيك الإيطالية (PVC).',
+        'مرابط أقواس الصالات (تيوبات أو بساتم).',
+        'مسننات التهوية العلوية والجانبية الكهربائية واليدوية (صناعة إيطالية).',
+        'مرابط تثبيت البلاستيك على الحديد (PVC صناعة إيطالية).',
+        ],'sub'=>[]],
+
+        ['id'=>9,'num'=>9,'cat'=>'systems','tag_ar'=>'الزراعة المائية','title_ar'=>'الزراعة المائية','title_en'=>'Hydroponics','img_tag'=>'HYDROPONICS ','images' => ['hydro_one.webp','hydro_two.webp'],
+        'desc' => 'الزراعة المائية من الطرق المبتكرة في الزراعة دون الحاجة إلى التربة، إذ إنها تعتمد على الماء ومجموعة من العناصر لتوفير كافة حاجات النبات للنمو.
+في السنوات الأخيرة، بدأ الاهتمام في استخدام هذه التقنية بشكل سريع لجدواها الاقتصادية ومردودها من الناحية التجارية وخصوصاً في زراعة الخضروات. يستخدم في أنظمة الزراعة المائية معدات أهمها:',
+        'points'=>['الداتش باكت ( Dutch Bucket )',
+        'الأنابيب البلاستيكية ( PVC )',
+        'أهم مميزات الزراعة المائية:',
+        ],'sub'=>[
+            'الزراعة دون الحاجة إلى التربة التقليدية.',
+            'توفير في استخدام المياه بنسبة كبيرة.',
+            'القدرة على التحكم الدقيق في تغذية النبات بالعناصر الضرورية.',
+            'السهولة في عملية الري وتعقيم البيئة الزراعية.',
+            'الزيادة في إنتاجية النبات من خلال القدرة على تحسين عمليات التغذية والتهوية للجذور.',
+            'خفض استخدام المبيدات الكيميائية بشكل كبير وبالتالي ارتفاع جودة المحصول وحماية البيئة.',
+        ]],
+
+
     ];
     @endphp
 
@@ -130,12 +158,6 @@
                 @endforeach
                 @if(!empty($p['sub']))
                 <li>
-                    <div class="pt-icon">
-                        <svg viewBox="0 0 10 10" fill="none">
-                            <circle cx="5" cy="5" r="4" fill="#34a83b"/>
-                            <path d="M3 5l1.5 1.5L7 3.5" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
                     <div>
                         <ul class="sub-list no-check">
                             @foreach($p['sub'] as $s)
@@ -155,7 +177,7 @@
 
 </div>
 
-<a class="fab" href="#" aria-label="العودة لأعلى الصفحة">↑</a>
+{{-- <a class="fab" href="#" aria-label="العودة لأعلى الصفحة">↑</a> --}}
 
 @endsection
 

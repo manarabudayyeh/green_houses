@@ -2,6 +2,7 @@
 
 <html lang="ar">
     <head>   
+    <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="date=no">
@@ -14,7 +15,8 @@
     <meta name="url" content="{{ url('/') }}">
     @yield('meta')
     
-    <link rel="icon" type="image/png" href="{{ asset('img/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -34,6 +36,7 @@
     <main>
         @yield('content')
     </main>
+    <a class="go_up" href="#" aria-label="العودة لأعلى الصفحة">⬆</a>
 
     {{-- Footer --}}
     @include('partials.footer')
