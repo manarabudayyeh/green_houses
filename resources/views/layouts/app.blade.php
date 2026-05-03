@@ -36,8 +36,9 @@
     <main>
         @yield('content')
     </main>
-    <a class="go_up" href="#" aria-label="العودة لأعلى الصفحة">⬆</a>
-
+<a class="go_up" href="#" aria-label="العودة لأعلى الصفحة">
+    <i class="fas fa-chevron-up"></i>
+</a>
     {{-- Footer --}}
     @include('partials.footer')
 
